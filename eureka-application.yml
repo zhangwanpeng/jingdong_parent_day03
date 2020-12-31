@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: dev # 激活开发环境配置
+---
+spring:
+  profiles: dev # 开发环境
+server:
+  port: 6868
+eureka:
+  client:
+    registerWithEureka: false # 服务注册开关
+    fetchRegistry: false # 服务发现开关
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/ #对外暴露的注册地址
