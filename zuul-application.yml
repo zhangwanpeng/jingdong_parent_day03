@@ -1,7 +1,3 @@
-spring:
-  profiles:
-    active: dev # 激活开发环境配置
----
 server:
   port: 9999
 #DB Configuration:
@@ -9,6 +5,11 @@ spring:
   profiles: dev # 开发环境
   application:
     name: zuul_server #指定服务名
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
