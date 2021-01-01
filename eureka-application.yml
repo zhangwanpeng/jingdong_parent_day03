@@ -4,6 +4,11 @@ spring:
 ---
 spring:
   profiles: dev # 开发环境
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 6868
 eureka:
